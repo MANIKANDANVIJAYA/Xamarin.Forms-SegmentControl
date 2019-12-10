@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SegmentControl"
+             x:Class="SegmentControl.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" x:Name="SegmentWithStack" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <local:SegmentedControl 
+                x:Name="SegmentedControl" 
+                TextColor="#373F42"
+                TintColor="#D4E6F1"
+                SelectedTextColor="#373F42"
+                DisabledColor="#373F42"
+                Margin="8,8,8,8">
+                <local:SegmentedControl.Children>
+                    <local:SegmentedControlOption Text="Item 1" />
+                    <local:SegmentedControlOption Text="Item 2"/>
+                </local:SegmentedControl.Children>
+            </local:SegmentedControl>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
